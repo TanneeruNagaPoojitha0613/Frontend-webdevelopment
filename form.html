@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:red;
+        }
+        h2{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="./index.html" method="get" autocomplete="off"></form>
+  <filedset>
+    <img src="./image/pass.jpg" alt="TS RTC BUS-PASS" width="1300" height="200">
+    <center>
+    <h1>Registration Form</h1>
+    </center>
+    </fieldset>
+    <fieldset>
+    <h2>Application Details</h2>
+
+    <table width="100">
+        <tr>
+            <td><label for="name">Name:</label>
+                <input type="text" id="name" required name="first"</td>
+                <br>
+            <td>
+                <label for="father/guardians name">Father/Guardians Name:</label>
+                <input type="text" id="father/guardians name" required name="Second55"</td>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="date" name="date"> </td>
+            <td><input type="radio" id="male" name="Gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="Gender" value="female">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="mobile no">Mobile No:</label>
+                <input type="mobile no" id="Mobile No" >
+                
+            </td>
+            <td><label for="email id">Email Id:</label>
+                <input type="email id" requried placeholder=" email id" name="email id" >
+                
+               
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="pdf">Photo:</label>
+                <input type="file" accept=".pdf" name="pdf file">
+            </td>
+            
+       </tr>
+      </table>
+    </filedset> 
+  <fieldset>
+    <h2>Residential Address</h2>
+    <tabel width="100">
+        <tr>
+            <td>
+                <label for="Address">Address:</label>
+                <textarea id="Address" name="address"></textarea>
+            </td>
+            <td>
+                <labe for="value">District:</labe>
+                <select name="value" id="value">
+                    <option value="hyd">Hyderbad</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="pincode">Pincode:</label>
+                <input type="text" id="pincode" requried maxlength="6" name="pincode">
+            </td>           
+             
+        </tr>
+    </tabel>
+    <fieldset>
+        <h2>Pass type Details</h2>
+        <table width="100">
+            <tr>
+                <td><labe for="value">City:</labe>
+                <select name="value" id="value">
+                   <option value="sec">Secunderbad</option> 
+                    <option value="hyd">Hyderbad</option>
+                </select>
+            </td>
+                
+            </tr>
+            <tr>
+                <td><labe for="value">Pass Type:</labe>
+                <select name="value" id="value">
+                   <option value="general">General</option> 
+                   <option value="ordinary">Ordinary</option>
+                    <option value="student">student pass</option>
+                </select></td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Start Date:</label>
+                  <input type="date" name="date">   
+                </td>
+                <td>
+                    <label for="date">End Date:</label>
+                  <input type="date" name="date">  
+                </td>
+            </tr>
+        </table>
+       
+    </fieldset>
+  <fieldset>
+    <h2>Mode of payment& pass Collection</h2>
+    <table width="100">
+        <tr>
+            <td><labe for="value">Pass type:</labe>
+                <select name="value" id="value">
+                   <option value="sec">Online</option> 
+                    <option value="hyd">Offline</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <labe for="value">Pass Delivery Mode:</labe>
+                <select name="value" id="value">
+                   <option value="sec">Counter Pickup</option> 
+                    <option value="hyd">Address Delivery</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+<br>
+  <fieldset>
+    <center>
+        <b>QWXY</b>
+    </center>
+    <center>
+    <label for="capcha" >Capcha</label>
+    <input type="text" name:"capcha" required placeholder="enter capcha" maxlength="8" min="6">
+    </center>
+    <br>
+    <center>
+    <input type="Submit" value="submit">
+    </center>
+   </fieldset>
+
+</fieldset> 
+</body>
+</html>
