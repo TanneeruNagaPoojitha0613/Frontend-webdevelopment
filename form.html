@@ -14,9 +14,9 @@
     </style>
 </head>
 <body>
-    <form action="./index.html" method="get" autocomplete="off"></form>
+    <form action="./index.html" method="get" >
   <filedset>
-    <img src="./image/pass.jpg" alt="TS RTC BUS-PASS" width="1300" height="200">
+    <img src="./image/apsrtc.jpg" alt="APS RTC BUS-PASS" width="1250" height="190">
     <center>
     <h1>Registration Form</h1>
     </center>
@@ -27,11 +27,13 @@
     <table width="100">
         <tr>
             <td><label for="name">Name:</label>
-                <input type="text" id="name" required name="first"</td>
-                <br>
+                <input type="text" required placeholder="enter a to z" pattern="[a-z,A-Z]+">
+            </td>
+            
+               <br> 
             <td>
                 <label for="father/guardians name">Father/Guardians Name:</label>
-                <input type="text" id="father/guardians name" required name="Second55"</td>
+                <input type="text" id="father/guardians name" required name="Second"></td>
                 <br>
             </td>
         </tr>
@@ -45,11 +47,11 @@
         </tr>
         <tr>
             <td><label for="mobile no">Mobile No:</label>
-                <input type="mobile no" id="Mobile No" >
+                <input type="text" id="Moile No" name="mobile no">
                 
             </td>
             <td><label for="email id">Email Id:</label>
-                <input type="email id" requried placeholder=" email id" name="email id" >
+                <input type="email id" requried pattern="^[a-z\d._]+@gmail\.com" placeholder=" email id"  >
                 
                
             </td>
@@ -74,14 +76,14 @@
             <td>
                 <labe for="value">District:</labe>
                 <select name="value" id="value">
-                    <option value="hyd">Hyderbad</option>
+                    <option value="nlr">Nellore</option>
                 </select>
             </td>
         </tr>
         <tr>
             <td>
                 <label for="pincode">Pincode:</label>
-                <input type="text" id="pincode" requried maxlength="6" name="pincode">
+                <input type="text" placeholder="pincode" requried patter="^\5[0-9]{5}$" >
             </td>           
              
         </tr>
@@ -92,8 +94,9 @@
             <tr>
                 <td><labe for="value">City:</labe>
                 <select name="value" id="value">
-                   <option value="sec">Secunderbad</option> 
-                    <option value="hyd">Hyderbad</option>
+                   <option value="sec">Gudur</option> 
+                    <option value="hyd">Ongole</option>
+                    <option value="hyd">Vinukonds</option>
                 </select>
             </td>
                 
@@ -152,11 +155,15 @@
     <input type="text" name:"capcha" required placeholder="enter capcha" maxlength="8" min="6">
     </center>
     <br>
+    <label for="password">Enter Password</label>
+    <input type="text" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,16}">
     <center>
-    <input type="Submit" value="submit">
+    <input type="Submit" >
     </center>
+   
    </fieldset>
 
-</fieldset> 
+</fieldset>
+ </form> 
 </body>
 </html>
