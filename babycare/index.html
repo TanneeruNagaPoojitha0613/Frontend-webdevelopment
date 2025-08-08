@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golden Years Retreat - Home</title>
+  <link rel="icon" href="./image/icon.jpeg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero-section {
+      height: 90vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .hero-section .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-section .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .program-card, .service-card {
+      transition: transform 0.3s;
+    }
+
+    .program-card:hover, .service-card:hover {
+      transform: scale(1.05);
+    }
+
+    .program-card img,
+    .service-card img {
+      border-radius: 10px;
+      height: 230px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary" href="index.html">Golden Years Retreat</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active text-primary" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section text-center text-white d-flex align-items-center justify-content-center" style="background-image: url('./image/Hero\ section\ background\ \(elders\ +\ kids\).jpeg');">
+  <div class="overlay"></div>
+  <div class="content">
+    <h4>Welcome to <span class="text-warning">Golden Years Retreat</span></h4>
+    <h5>Where Babies & Seniors are Cared with💕&Dignity👴👶</h5>
+    <a href="about.html" class="btn btn-primary btn-lg mt-3">Learn More</a>
+  </div>
+</section>
+
+<!-- Programs Section -->
+<section class="programs py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 text-secondary">Our Programs</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="program-card p-3 shadow-sm bg-white text-center">
+          <img src="./image/Daycare Services.jpg" alt="Daycare Program" class="img-fluid mb-3">
+          <h5>Daycare Program</h5>
+          <p>Secure daytime care for young children, combining play and learning.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="program-card p-3 shadow-sm bg-white text-center">
+          <img src="./image/Senior Citizen Wellness.jpg" alt="Senior Care" class="img-fluid mb-3">
+          <h5>Senior Wellness</h5>
+          <p>Compassionate care for elders with tailored activities and health checks.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="program-card p-3 shadow-sm bg-white text-center">
+          <img src="./image/Infant with a caregiver.jpeg" alt="Infant Play" class="img-fluid mb-3">
+          <h5>Infant Play & Learn</h5>
+          <p>Interactive play sessions for infants to boost sensory development.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="program-card p-3 shadow-sm bg-white text-center">
+          <img src="./image/eledr reading.jpeg" alt="Reading Corner" class="img-fluid mb-3">
+          <h5>Reading Corner</h5>
+          <p>Quiet reading time to foster imagination in both kids and seniors.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="program-card p-3 shadow-sm bg-white text-center">
+          <img src="./image/yoga.jpeg" alt="Senior Yoga" class="img-fluid mb-3">
+          <h5>Yoga & Meditation</h5>
+          <p>Gentle yoga sessions to improve flexibility and calm the mind.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="program-card p-3 shadow-sm bg-white text-center">
+          <img src="./image/kids drawing image.jpeg" alt="Creative Play" class="img-fluid mb-3">
+          <h5>Creative Activities</h5>
+          <p>Arts and crafts to boost creativity and motor skills in kids.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 text-secondary">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="service-card text-center p-4 shadow-sm rounded">
+          <img src="./image/Infant with a caregiver.jpeg" class="img-fluid mb-3" alt="Infant Care">
+          <h5>Infant Care</h5>
+          <p>Gentle and nurturing infant support by certified caregivers.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card text-center p-4 shadow-sm rounded">
+          <img src="./image/Preschool classroom.jpeg" class="img-fluid mb-3" alt="Preschool">
+          <h5>Preschool Learning</h5>
+          <p>Fun-based early education to prepare toddlers for school.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card text-center p-4 shadow-sm rounded">
+          <img src="./image/Kids doing activities after school.jpeg" class="img-fluid mb-3" alt="After School">
+          <h5>After School Program</h5>
+          <p>Safe space for after-school care with structured activities.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card text-center p-4 shadow-sm rounded">
+          <img src="./image/Healthy food on plates.jpeg" class="img-fluid mb-3" alt="Meals">
+          <h5>Healthy Meals</h5>
+          <p>Nutritious meals for children and seniors, prepared fresh daily.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card text-center p-4 shadow-sm rounded">
+          <img src="./image/Van or bus with kids boarding.jpeg" class="img-fluid mb-3" alt="Transport">
+          <h5>Pickup & Drop</h5>
+          <p>Safe and punctual transport service for kids and elders.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card text-center p-4 shadow-sm rounded">
+          <img src="./image/Doctor with senior citizen.jpeg" class="img-fluid mb-3" alt="Medical">
+          <h5>Medical Monitoring</h5>
+          <p>Routine health checks for seniors by trained medical staff.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light py-3 text-center">
+  <p class="mb-0 text-muted">&copy; 2025 Golden Years Retreat. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
